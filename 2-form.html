@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/vendor-5ObWk2rO.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-V-d0xn0G.css">
+    <script type="module" crossorigin src="/vanilla-app-template/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5ObWk2rO.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-wjTiLgxl.css">
   </head>
   <body>
     <div class="container">
-      <a href="./index.html">Back</a>
+      <a class="back-link" href="./index.html">Back</a>
       <form class="feedback-form" autocomplete="off">
         <label>
-          Email
-          <input type="email" name="email" autofocus />
+          <span class="span-text">Email</span>
+          <input class="input-email" type="email" name="email" autofocus />
         </label>
         <label>
-          Message
-          <textarea name="message" rows="8"></textarea>
+          <span class="span-text">Message</span>
+          <textarea class="textarea" name="message" rows="8"></textarea>
         </label>
-        <button type="submit">Submit</button>
+        <button class="submit-btn" type="submit">
+          <span class="submit-btn-text">Submit</span>
+        </button>
       </form>
     </div>
   </body>
